@@ -1,0 +1,220 @@
+*{
+    margin : 0;
+    padding : 0;
+    user-select: none;
+    font-family: 'Ubuntu', sans-serif;
+    transition: 0.5s;
+    /* transition: 0.5s; */
+}
+
+:root
+{
+    --aqua-theme: aqua;
+    --aqua-theme-transparency1: rgb(0, 255, 255, 0.6);
+    --aqua-theme-transparency2: rgb(0, 255, 255, 0.4);
+
+    --white-theme: white;
+    --white-theme-transparency1: rgb(255, 255, 255, 0.6);
+    --white-theme-transparency2: rgb(255, 255, 255, 0.4);
+
+    --black-theme: black;
+    --black-theme-transparency1: rgba(0, 0, 0, 0.6);
+    --black-theme-transparency2: rgba(0, 0, 0, 0.4);
+
+    --light-theme : var(--white-theme);
+    --light-theme-transparency1 : var(--white-theme-transparency1);
+    --light-theme-transparency2 : var(--white-theme-transparency2);
+
+    --light-theme2 : var(--aqua-theme);
+    --light-theme2-transparency1 : var(--aqua-theme-transparency1);
+    --light-theme2-transparency2 : var(--aqua-theme-transparency2);
+
+    --dark-theme: var(--black-theme);
+    --dark-theme-transparency1: var(--black-theme-transparency1);    
+}
+
+body
+{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-flow: column wrap;
+    background: var(--dark-theme);
+    color: var(--light-theme);
+}
+
+.body
+{
+    /* border: 2px solid red; */
+
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+
+    /* height: fit-content; */
+
+    background: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v1016-c-02-ksh6qkug.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=671bde82629fba3ee647c5ce1fde5504") no-repeat center;
+    background-size: cover;
+
+    padding: 2.5em 0em;
+}
+
+.form
+{
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.form>h2
+{
+    /* border: 2px solid red; */
+    padding: 0.5em 0.5em;
+    width: 50vw;
+
+    font-weight: lighter;
+}
+
+form
+{
+    /* border: 2px solid red; */
+
+    /* background: rgba(0, 0, 0, 0.7); */
+    width: 50vw;
+
+    padding: 1em 1em;
+    margin: 0 auto;
+}
+
+.fitems
+{
+    /* border: 2px solid blue; */
+
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+
+    padding: 0.5em 0;
+}
+
+.fitems>label
+{
+    display: inline-block;
+    width: 200px;
+
+    font-weight: lighter;
+    color: var(--light-theme2);
+}
+
+.finputs
+{
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid var(--light-theme2);
+    color: var(--light-theme2);
+    outline: none;
+    background: none;
+
+    padding: 5px 5px;
+}
+
+.fitems>span>a
+{
+    color: var(--light-theme2);
+    text-decoration: none;
+}
+
+.sbtn>button
+{
+    border: 2px solid var(--light-theme2);
+    border-radius: 0px;
+    background: transparent;
+
+    color: var(--light-theme2);
+    font-weight: bold;
+
+    padding: 5px 5px;
+    margin: 0 5px;
+
+    transition: all 0.5s ease;
+    
+}
+
+.sbtn>button:hover
+{
+    background: var(--light-theme2);
+    color: var(--dark-theme);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    color: var(--light-theme2);
+    filter: invert(1);
+}
+
+.alert
+{
+    display: flex;
+    align-items: center;
+    
+    
+    font-weight: bold;
+}
+
+.danger
+{
+    border: 2px solid red;
+    background: pink;
+    color: red;
+}
+
+.success
+{
+    border: 2px solid green;
+    background: rgb(181, 255, 70);
+    color: green;
+}
+
+.alerti
+{
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+}
+
+.alerti>h5, .alerti>i
+{
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 461px)
+{
+    .form
+    {
+        padding: 0 5px;
+        display: block;
+    }
+
+    .form>h2
+    {
+        width: 100%;
+    }
+    form
+    {
+        width: 80vw;
+        font-size: 1em;
+    }
+
+    .fitems
+    {
+        width: 95vw;
+    }
+}

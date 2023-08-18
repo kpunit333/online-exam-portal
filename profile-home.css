@@ -1,0 +1,120 @@
+*{
+    margin : 0;
+    padding : 0;
+    user-select: none;
+    font-family: 'Ubuntu', sans-serif;
+    transition: 0.5s;
+    /* transition: 0.5s; */
+}
+
+:root
+{
+    --aqua-theme: aqua;
+    --aqua-theme-transparency1: rgb(0, 255, 255, 0.6);
+    --aqua-theme-transparency2: rgb(0, 255, 255, 0.4);
+
+    --white-theme: white;
+    --white-theme-transparency1: rgb(255, 255, 255, 0.6);
+    --white-theme-transparency2: rgb(255, 255, 255, 0.4);
+
+    --black-theme: black;
+    --black-theme-transparency1: rgba(0, 0, 0, 0.6);
+    --black-theme-transparency2: rgba(0, 0, 0, 0.4);
+
+    --light-theme : var(--white-theme);
+    --light-theme-transparency1 : var(--white-theme-transparency1);
+    --light-theme-transparency2 : var(--white-theme-transparency2);
+
+    --light-theme2 : var(--aqua-theme);
+    --light-theme2-transparency1 : var(--aqua-theme-transparency1);
+    --light-theme2-transparency2 : var(--aqua-theme-transparency2);
+
+    --dark-theme: var(--black-theme);
+    --dark-theme-transparency1: var(--black-theme-transparency1);    
+    --dark-theme-transparency2: var(--black-theme-transparency2);    
+}
+
+body
+{    
+    background: var(--dark-theme);
+    color: var(--light-theme);
+}
+
+.body
+{
+    /* border: 2px solid blue; */
+    background: var(--dark-theme);
+    color: var(--light-theme);
+
+    padding: 5px 5px;
+}
+
+.profile-home
+{
+    /* border: 2px solid yellow; */
+    height: 70vh;
+
+    /* background: url(./images/welcome-bg.jpeg) no-repeat center; */
+
+    /* background: url("https://static.vecteezy.com/system/resources/previews/001/410/879/non_2x/e-learning-online-education-futuristic-banner-vector.jpg") no-repeat center; */
+
+    /* background: url("https://previews.123rf.com/images/melpomen/melpomen1808/melpomen180800500/107030554-online-education-with-young-man-pointing-on-a-dark-background.jpg") no-repeat center; */
+
+    /* background: url("https://www.nclouds.com/blog/wp-content/uploads/2019/10/banner-blog17o2019.jpg") no-repeat center; */
+    
+    /* background: url("https://takopro.com.hk/wp-content/uploads/2018/11/big-data-analytics-banner.jpg") no-repeat center; */
+
+    background: url(./images/welcome-bg.jpg) no-repeat center;
+    
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+/* .home */
+
+.home
+{
+    /* border: 2px solid red; */
+
+    width: 100%;
+    padding: 1rem 1rem;
+    background: var(--dark-theme-transparency1);
+}
+
+.home>div
+{
+    /* border: 2px solid red; */
+    margin: 5px 0;
+    padding: 5px 10px;
+}
+
+.welcome>h1{
+    padding: 5px 5px;
+}
+
+.desc>p
+{
+    padding: 5px 5px;
+    text-align: justify;
+}
+
+.explore>span
+{
+    border: 2px solid var(--light-theme2);
+    text-decoration: none;
+    
+    color: var(--light-theme2);
+    padding: 7px 7px;
+    margin: 0px 5px;
+
+    transition: 0.5s;
+}
+
+.explore>span:hover
+{
+    background: var(--light-theme2);
+    color: var(--dark-theme);
+}

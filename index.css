@@ -1,0 +1,201 @@
+*{
+    margin : 0;
+    padding : 0;
+    user-select: none;
+    font-family: 'Ubuntu', sans-serif;
+    /* transition: 0.5s; */
+    transition: 0.5s;
+}
+
+:root
+{
+    --aqua-theme: aqua;
+    --aqua-theme-transparency1: rgb(0, 255, 255, 0.6);
+    --aqua-theme-transparency2: rgb(0, 255, 255, 0.4);
+
+    --white-theme: white;
+    --white-theme-transparency1: rgb(255, 255, 255, 0.6);
+    --white-theme-transparency2: rgb(255, 255, 255, 0.4);
+
+    --black-theme: black;
+    --black-theme-transparency1: rgba(0, 0, 0, 0.6);
+    --black-theme-transparency2: rgba(0, 0, 0, 0.4);
+
+    --light-theme : var(--white-theme);
+    --light-theme-transparency1 : var(--white-theme-transparency1);
+    --light-theme-transparency2 : var(--white-theme-transparency2);
+
+    --light-theme2 : var(--aqua-theme);
+    --light-theme2-transparency1 : var(--aqua-theme-transparency1);
+    --light-theme2-transparency2 : var(--aqua-theme-transparency2);
+
+    --dark-theme: var(--black-theme);
+    --dark-theme-transparency1: var(--black-theme-transparency1);    
+}
+
+body
+{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column wrap; */
+
+    background: var(--dark-theme);
+    color: var(--light-theme);
+}
+
+
+.banner
+{
+    /* border: 2px solid red; */
+
+    /* background: url(https://img.freepik.com/free-vector/geometric-science-education-background-vector-gradient-blue-digital-remix_53876-125993.jpg) no-repeat; */
+    /* background: url(https://wallpaperaccess.com/full/1385382.jpg) no-repeat center; */
+    background: url(./images/index-bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 70vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2em 0;
+    margin: auto auto;
+
+}
+
+.heading-holder
+{
+    /* border: 2px solid red; */
+
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--light-theme);
+
+    padding: 0em 1em;
+    text-align: center;
+}
+
+.heading-holder>h1
+{
+    border-bottom: 2px solid var(--light-theme);
+
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 1em 1em;
+}
+
+.heading-holder>p
+{
+    /* border-bottom: 2px solid var(--light-theme); */
+    
+    font-size: 1.2em;
+    font-weight: lighter;
+    text-align: center;
+
+
+    padding: 1em 1em;
+}
+
+@media screen and (max-width: 650px)
+{
+    .banner{
+        height: 85vh;
+    }
+
+    .heading-holder>p
+    {
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width: 350px)
+{
+    .banner{
+        height: 90vh;
+    }
+
+}
+
+.course-link
+{
+    /* border: 2px solid red; */
+    /* height: 75vh; */
+
+    background: rgb(1, 1, 40);
+    padding: 0em 1em;
+    display: none;
+    margin: auto auto;
+
+
+}
+
+.course-link>h3
+{
+    /* border: 2px solid red; */
+    border-bottom: 1.5px solid var(--light-theme);
+    padding: 1em 1em;
+    
+    display: block;
+    align-self: left;
+}
+
+.courses
+{
+    /* border: 2px solid blue; */
+    padding: 1em 1em;    
+    margin: auto auto;
+
+    display: grid;
+    /* justify-content: space-evenly; */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));    
+    grid-row-gap: 1em;
+}
+
+.course-card
+{
+    border: 2px solid var(--light-theme2-transparency2);
+    display: inline-block;
+
+    width: 250px;
+    
+    color: var(--light-theme2);
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.course-card:hover
+{
+    border: 2px solid var(--light-theme2);
+    transform: scale(1.03);
+    /* box-shadow: 0 0 10px var(--light-theme2); */
+}
+
+.cpos>img
+{
+    width: 100%;
+}
+
+.cdesc
+{
+    /* border: 2px solid blue; */
+    padding: 0.6em 1em;
+    text-align: center;
+    transition: 0.7s ;
+}
+
+.cdesc:hover
+{
+    background: var(--light-theme2);
+    color: var(--dark-theme);
+}
+
+::-webkit-scrollbar
+{
+    appearance: none;
+    width: 0px;
+}
